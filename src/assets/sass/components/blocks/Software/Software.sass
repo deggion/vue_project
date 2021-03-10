@@ -1,0 +1,82 @@
+.ourSoftware
+  .container
+    padding-top: 105px
+    padding-bottom: 100px
+  &-links
+    background: rgb(245, 245, 245)
+    .container
+      padding-top: 85px
+      padding-bottom: 50px
+      ul
+        width: 100%
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        li
+          position: relative
+          width: calc( 25% - 30px )
+          height: 198px
+          display: flex
+          flex-direction: column
+          background: rgb(31, 54, 92)
+          overflow: hidden
+          &:last-of-type
+            div
+              b
+                text-transform: none
+          img
+            opacity: 0.7
+            display: block
+            height: 100%
+            width: 104%
+            transform: translate3d(-10px,0,0)
+            transition: .35s
+          div
+            position: absolute
+            display: flex
+            flex-direction: column
+            padding: 15px
+            b
+              position: relative
+              text-transform: uppercase
+              line-height: 30px
+              font-size: 25px
+              font-weight: 700
+              color: #fff
+              opacity: 1
+              &::before
+                content: ''
+                position: absolute
+                bottom: -12px
+                background: #fff
+                width: 0
+                height: 2px
+                transition: .35s
+            span
+              color: #fff
+              font-size: 14px
+              font-weight: 700
+              padding-top: 30px
+              -webkit-transform: translate3d(100%,0,0)
+              transform: translate3d(100%,0,0)
+              opacity: 0
+              transition: .35s
+          a
+            position: absolute
+            width: 100%
+            min-height: 100%
+            display: block
+          &:hover
+            img
+              opacity: 0.3
+              transform: none
+            div
+              b
+                &::before
+                  width: 100%
+              span
+                opacity: 1
+                transform: none
+
+@import media
+

@@ -1,0 +1,59 @@
+.monitoring
+  padding-top: 105px
+  padding-bottom: 70px
+  background: rgb(31, 54, 92)
+  color: #fff
+  .container
+    .slick-slider
+      .slick-arrow
+        cursor: pointer
+        border: none
+        position: absolute
+        bottom: 29%
+        width: 22px
+        height: 80px
+        display: block
+        background: -webkit-linear-gradient(135deg, #ffb200 30%, #eae13c 100%)
+        background: linear-gradient(135deg, #ffb200 30%, #eae13c 100%)
+        &::before
+          position: absolute
+          top: 0
+          left: 0
+          content: ''
+          background: url(../../assets/img/icons/arrow.png) no-repeat
+          background-size: 18px 18px
+          background-position-x: 15%
+          background-position-y: 50%
+          width: 115%
+          height: 100%
+          opacity: 1
+        &:hover
+          background: #ffb200
+        &:last-of-type
+          &::before
+            transform: rotate(180deg)
+            background-position-x: 50%
+      .v-slick-monitoring-item
+        display: flex !important
+        flex-direction: column
+        align-items: center
+        img
+          margin-bottom: 20px
+          width: 150px
+          height: 150px
+          border-radius: 100%
+        b
+          text-align: center
+          margin-bottom: 10px
+          background: -webkit-linear-gradient(left, #ffb200 30%, #eae13c 100%)
+          -webkit-background-clip: text
+          -webkit-text-fill-color: transparent
+          font-size: 20px
+        p
+          font-style: italic
+          text-align: center
+          line-height: 32px
+          font-size: 20px
+          max-width: 760px
+        
+@import media

@@ -1,0 +1,62 @@
+.topBar
+  font-family: 'Roboto'
+  .container
+    justify-content: flex-end
+    align-items: center
+    position: relative
+    padding: 5px 0
+    &::before
+      content: ''
+      height: 1px
+      width: 100%
+      position: absolute
+      bottom: 0
+      left: 0
+      display: block
+      background: rgba(51,51,51,0.12)
+    a
+      color: #2d405b
+      font-size: 17px
+      font-weight: 700
+      margin: 15px
+
+      &:hover
+        opacity: 0.8
+    ul
+      margin-left: 20px
+      display: flex
+      flex-direction: column
+      position: relative
+      li
+        color: #2d405b
+        line-height: 1rem
+        font-size: 13px
+        font-weight: 500
+      &::before
+        content: ''
+        position: absolute
+        left: -20px
+        top: 8%
+        width: 1px
+        height: 84%
+        background: #2d405b
+        display: block
+    span
+      margin-left: 15px
+      background: linear-gradient(135deg, #ffb200 30%, #eae13c 100%)
+      background-clip: text
+      webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+      color: transparent
+      line-height: 100%
+      font-size: 60px
+      font-weight: 500
+
+@media only screen and ( max-width: 1150px )
+  .topBar
+    .container
+      ul
+        display: none
+      span
+        display: none
+  

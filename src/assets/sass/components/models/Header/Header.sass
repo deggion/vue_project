@@ -1,0 +1,126 @@
+.header
+  font-family: 'Roboto'
+  box-shadow: 0 8px 11px -5px rgb(0 0 0 / 8%)
+  width: 100%
+  background: #fff
+  z-index: 2
+  transition: 1s
+  &.sticky
+    top: 0
+    position: fixed
+    transition: 1s
+    .container
+      padding: 15px 0
+      .header-logo
+        display: none
+      .header-list
+        margin: auto
+  .container
+    padding: 25px 0
+    align-items: center
+    .topBar
+      display: none
+      margin-left: auto
+      .container
+        &::before
+          display: none
+        ul
+          display: flex
+          &::before
+            display: none
+        span
+          display: block
+    .mobileBurger
+      display: none
+      position: relative
+      width: 22px
+      height: 16px
+      cursor: pointer
+      span
+        position: absolute
+        display: block
+        width: 22px
+        height: 2px
+        background: #000
+        &:first-of-type
+          top: 0
+        &:nth-of-type(2)
+          top: 7px
+        &:last-of-type
+          top: 14px
+    .closeMobileNav
+      z-index: 1
+      cursor: pointer
+      position: fixed
+      right: -30px
+      top: 15px
+      display: block
+      width: 30px
+      height: 30px
+      background: -webkit-linear-gradient(135deg, #ffb200 30%, #eae13c 100%)
+      background: linear-gradient(135deg, #ffb200 30%, #eae13c 100%)
+      transition: .5s
+      opacity: 0
+      &::before
+        content: ''
+        position: absolute
+        width: 10px
+        height: 100%
+        left: -10px
+        display: block
+        background: #fff
+      span
+        position: absolute
+        top: 49%
+        left: 18%
+        display: block
+        width: 20px
+        height: 2px
+        background: #fff
+        transition: .5s
+        &:first-of-type
+          transform: rotate(45deg)
+        &:last-of-type
+          transform: rotate(-45deg)
+      // &:hover
+      //   span
+      //     transform: rotate(45deg)
+      //     &:first-of-type
+      //       transform: rotate(-45deg)
+      //     &:last-of-type
+      //       transform: rotate(45deg)
+  &-list
+    display: flex
+    margin-left: 60px
+    li
+      margin-right: 36px
+      position: relative
+      &.active, &:hover
+        &::before
+          animation-name: filling
+          animation-duration: .4s
+          animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275)
+          content: ''
+          position: absolute
+          bottom: -6px
+          height: 2px
+          width: 100%
+          display: block
+          background: #000
+          background: -webkit-linear-gradient(left, #ffb200 30%, #eae13c 100%)
+      &:last-of-type
+        margin-right: 0
+      a
+        font-size: 17px
+        color: #333333
+        font-weight: 700
+
+@keyframes filling
+  0%
+    left: 0
+    width: 0
+  100%
+    width: 100%
+
+@import media
+@import './MobileNav/MobileNav'

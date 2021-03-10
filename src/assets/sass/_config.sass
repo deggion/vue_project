@@ -1,0 +1,36 @@
+// fonts
+@import './config/fonts'
+
+// normalize
+@import './config/normalize'
+
+// USER VARIABLES SECTION
+
+$system: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+
+::placeholder
+	color: #9FAFC1
+
+// ::selection
+// 	background: 
+// 	color: orange
+
+body
+	font-family: $fontMain
+	font-size: $fontsize
+	min-width: 320px
+	position: relative
+
+.container
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+	width: 100%
+	max-width: 1200px
+	margin: 0 auto
+
+
+@media only screen and (max-width: 1215px)
+	.container
+		padding-left: 20px !important
+		padding-right: 20px !important

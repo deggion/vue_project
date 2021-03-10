@@ -1,0 +1,67 @@
+@media only screen and ( max-width: 1080px )
+  .whyUs
+    &-content
+      flex-direction: column
+      align-items: center
+      &__text
+        margin-top: 60px
+
+@media only screen and ( max-width: 560px )
+  .whyUs
+    &-content
+      &__borderCircle
+        max-width: 368px
+        height: 358px
+      &__circle
+        max-width: 266px
+        height: 258px
+        & > div
+          b
+            max-width: 230px
+          p
+            max-width: 250px
+
+@media only screen and ( max-width: 420px )
+  .whyUs
+    &-content
+      &__borderCircle
+        display: none
+      &__mobileList
+        display: flex
+        flex-direction: column
+        align-self: flex-end
+        position: relative
+        &::before
+          content: ''
+          display: block
+          position: absolute
+          left: 12px
+          width: 1px
+          height: 79%
+          background: #ffff
+        &--item
+          margin-bottom: 30px
+          display: flex
+          i
+            margin-right: 24px
+            min-width: 24px
+            min-height: 24px
+            max-width: 24px
+            max-height: 24px
+            background: #ffb536
+            border-radius: 100%
+            z-index: 1
+          & > div
+            border-radius: 5px
+            padding: 10px 15px
+            color: #1f365c
+            max-width: 312px
+            width: 100%
+            background: #fff
+            &:last-of-type
+              margin-bottom: 0
+            b
+              font-size: 20px
+              line-height: 30px
+            p
+              font-size: 14px

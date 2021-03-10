@@ -1,0 +1,81 @@
+.software
+  &-info
+    background: url(../img/components/pages/Software/california-traffic.jpg) no-repeat
+    background-size: cover
+    background-position-y: 50%
+    background-position-x: 50%
+    min-height: 762px
+    display: flex
+    .container
+      margin: auto
+      ul
+        display: flex
+        flex-wrap: wrap
+        li
+          display: flex
+          padding: 50px
+          flex-direction: column
+          width: 33.333%
+          min-height: 362px
+          &:first-of-type
+            background: #dedede
+          &:nth-of-type(2)
+            background: #e9ce3f
+          &:last-of-type
+            background: #1f365c
+            b
+              color: #fff
+            span
+              color: #fff
+          i
+            margin-left: 10px
+          b
+            margin-top: 35px
+            margin-bottom: 10px
+            font-family: 'Montserrat'
+            font-weight: 400
+            font-size: 32px
+            line-height: 34px
+            color: #272727
+          span
+            color: #85868c
+            line-height: 27px
+  &-content
+    padding: 35px 0 80px
+    .container
+      justify-content: flex-end
+      & > ul
+        display: flex
+        flex-direction: column
+        & > li
+          display: flex
+          margin-bottom: 35px
+          &:last-of-type
+            margin-bottom: 0
+          img
+            margin-right: 210px
+            margin-top: 55px
+            width: 220px
+            height: 220px
+            border-radius: 100%
+          div
+            display: flex
+            flex-direction: column
+            max-width: 585px
+            color: #85868c
+            b
+              margin-bottom: 10px
+              font-size: 24px
+              font-weight: 34px
+              text-align: center
+              color: #333333
+            p
+              margin-bottom: 10px
+              &:last-of-type
+                margin-bottom: 0
+            ul
+              list-style: inside
+              margin-bottom: 10px
+              li
+  
+@import media

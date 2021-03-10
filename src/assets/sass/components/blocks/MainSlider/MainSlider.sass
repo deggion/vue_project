@@ -1,0 +1,113 @@
+.mainSlider
+  .slick-slide
+    &.slick-active
+      .v-slick-main-item
+        .container
+          & > div
+            &:first-of-type
+              b
+                position: relative
+                top: 0
+                transition: top .8s ease-in .8s
+              & > div
+                span
+                  position: relative
+                  left: 0
+                  transform: none
+                  transition: .8s ease-in
+              p
+                position: relative
+                bottom: 0
+                transition: bottom .8s ease-in .8s
+              a
+                position: relative
+                left: 0
+                bottom: 0
+                transition: .4s ease-in 1.6s
+            &:last-of-type
+              opacity: 1
+              transition: opacity .8s ease-out 1.6s
+
+    &:nth-of-type(2)
+      .v-slick-main-item
+        background: url(../img/components/blocks/MainSlider/gruzz.jpg) 50% 50% no-repeat
+        background-size: cover
+        .container
+          & > div
+            &:first-of-type
+              div
+                span
+                  background: rgb(31, 54, 92)
+              a
+                border-color: rgb(31, 54, 92)
+                position: absolute
+                top: 416px
+
+  .v-slick-main-item
+    min-height: 568px
+    background: rgb(31, 54, 92)
+    color: #ffff
+    height: 100%
+    position: relative
+    .container
+      margin-top: 50px
+      padding-left: 35px
+      & > div
+        &:first-of-type
+          position: relative
+          max-width: 527px
+          display: flex
+          flex-direction: column
+          b
+            position: absolute
+            top: -100%
+            font-family: 'Open Sans Condensed'
+            font-size: 80px
+            line-height: 80px
+          & > div
+            position: relative
+            margin: 45px 0 50px
+            z-index: 9999
+            span
+              position: absolute
+              top: 0
+              display: block
+              left: -100%
+              transform: translateX(-235%)
+              background: rgb(255, 178, 0)
+              border-radius: 8px
+              max-width: 527px
+              width: 100%
+              height: 11px
+          p
+            position: absolute
+            bottom: -150%
+            font-family: 'Open Sans'
+            display: block
+            min-height: 120px
+            font-size: 17px
+            line-height: 30px
+            margin-bottom: 30px
+          a
+            position: absolute
+            left: -170%
+            display: flex
+            align-items: center
+            border: 4px solid rgb(255, 178, 0)
+            border-radius: 3px
+            height: 42px
+            padding: 0 30px
+            width: fit-content
+            color: #fff
+            font-size: 14px
+            font-weight: 700
+        &:last-of-type
+          display: flex
+          align-items: center
+          margin-left: 100px
+          opacity: 0
+          img
+            max-width: 444px
+            width: 100%
+
+@import media

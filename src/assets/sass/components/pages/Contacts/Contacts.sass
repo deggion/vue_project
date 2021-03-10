@@ -1,0 +1,82 @@
+.contacts
+  padding-top: 70px
+  .container
+    justify-content: space-between
+  iframe
+    margin-top: 80px
+    width: 100%
+  &-links
+    max-width: 585px
+    width: 100%
+    b
+      font-size: 26px
+    & > div
+      display: flex
+      margin-top: 30px
+      margin-left: 50px
+      ul
+        margin-right: 100px
+        max-width: 292.5px
+        width: 100%
+        position: relative
+        font-family: 'Open Sans Condensed'
+        li
+          line-height: 24px
+          margin-bottom: 10px
+          a
+            font-size: 18px
+            font-weight: 700
+            color: #333333
+        &::before
+          content: ''
+          display: block
+          width: 34px
+          height: 34px
+          border-radius: 100%
+          position: absolute
+          left: -50px
+          top: -3px
+          background: -webkit-linear-gradient(135deg, #ffb200 30%, #eae13c 100%)
+          background: linear-gradient(135deg, #ffb200 30%, #eae13c 100%)
+  &-form
+    display: flex
+    flex-direction: column
+    max-width: 585px
+    width: 100%
+    b
+      font-size: 26px
+      margin-bottom: 10px
+    input
+      margin-bottom: 10px
+      padding: 5px 15px
+      height: 38px
+      background: #fdfdfd
+      border: 1px solid rgba(51,51,51,0.12)
+      &::placeholder
+        font-size: 14px
+    textarea
+      padding: 5px 15px
+      height: 137px
+      background: #fdfdfd
+      border: 1px solid rgba(51,51,51,0.12)
+      &::placeholder
+        font-size: 14px
+    button
+      position: relative
+      margin-top: 20px
+      padding: 0 18px
+      width: fit-content
+      background: -webkit-linear-gradient(135deg, #ffb200 30%, #eae13c 100%)
+      background: linear-gradient(135deg, #ffb200 30%, #eae13c 100%)
+      border: none
+      font-size: 14px
+      color: #fff
+      font-weight: 700
+      height: 38px
+      display: flex
+      align-items: center
+      opacity: 1
+      &:active
+        background: #ffb200
+  
+@import media

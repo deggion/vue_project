@@ -1,0 +1,59 @@
+@media only screen and ( max-width: 1300px )
+  .articles
+    .container
+      justify-content: flex-start
+    &-content
+      &__post
+        padding-left: 50px
+        img
+          width: 100%
+    &-toggle
+      margin-left: 50px
+
+@media only screen and ( max-width: 992px )
+  .articles
+    .container
+      align-items: center
+      padding-left: 50px !important
+      padding-right: 50px !important
+      flex-direction: column-reverse
+    &-nav
+      margin-top: 60px
+      max-width: none
+      border: none
+      ul
+    &-content
+      &__post
+        padding-left: 0
+    &-toggle
+      margin-left: 0
+
+@media only screen and ( max-width: 780px )
+  .articles
+    .container
+      padding-left: 20px !important
+      padding-right: 20px !important
+    &-nav
+      max-width: none
+      border: none
+      align-self: start
+
+@media only screen and ( max-width: 640px )
+  .articles
+    &-toggle
+      ul
+        flex-direction: column
+        align-items: center
+        li
+          i
+            display: none
+          div
+            margin: 0
+            span
+              align-self: center
+          &:last-of-type
+            margin-top: 25px
+            div
+              margin: 0
+              span
+                align-self: center

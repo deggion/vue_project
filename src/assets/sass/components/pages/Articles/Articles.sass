@@ -1,0 +1,128 @@
+.articles
+  padding: 70px 0
+  .container
+    justify-content: space-between
+  &-nav
+    max-width: 324px
+    border-right: 1px solid rgba(51,51,51,0.12)
+    ul
+      display: flex
+      flex-wrap: wrap
+      li
+        position: relative
+        border-right: 2px solid transparent
+        border-bottom: 2px solid transparent
+        a
+          position: absolute
+          width: 100%
+          height: 100%
+        img
+          cursor: pointer
+          max-width: 66.5px
+          width: 100%
+          display: block
+  &-content
+    &__post
+      max-width: 825px
+      img
+        width: 825px
+        margin-bottom: 45px
+      p
+        color: #85868c
+        margin-bottom: 10px
+        &:last-of-type
+          margin-bottom: 0
+        strong
+          margin-bottom: 0
+      b
+        margin-bottom: 10px
+        font-size: 20px
+        display: inline-block
+      strong
+        display: inline-block
+        margin-bottom: 10px
+        font-size: 15px
+        color: #85868c
+      ul
+        list-style: inside
+        li
+          margin-bottom: 10px
+          color: #85868c
+  &-author
+    margin-top: 45px
+    ul
+      display: flex
+      justify-content: center
+      flex-wrap: wrap
+      li
+        color: #b4b5bb
+        font-size: 13px
+        padding-right: 9px
+        margin-right: 6px
+        position: relative
+        &::before
+          content: ''
+          position: absolute
+          right: 0
+          top: 50%
+          transform: translateY(-50%)
+          display: block
+          background: #b4b5bb
+          width: 3px
+          height: 3px
+          border-radius: 100%
+        &:last-of-type
+          padding-right: 0
+          margin-right: 0
+          &::before
+            display: none
+        a
+          font-size: 13px
+          color: #b4b5bb
+  &-toggle
+    margin: 40px 0 50px
+    padding: 25px 0
+    border-top: 1px solid rgba(51,51,51,0.12)
+    border-bottom: 1px solid rgba(51,51,51,0.12)
+    ul
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      li
+        cursor: pointer
+        display: flex
+        align-items: center
+        i
+          display: flex
+          &:hover
+            &::before
+              background: rgba(51,51,51,0.23)
+        div
+          display: flex
+          flex-direction: column
+          margin-left: 14px
+          span
+            margin-bottom: 5px
+            text-transform: uppercase
+            color: #b4b5bb
+            font-size: 13px
+          b
+            font-size: 20px
+            width: fit-content
+            &:hover
+              background: -webkit-linear-gradient(left, #ffb200 30%, #eae13c 100%)
+              color: transparent
+              -webkit-background-clip: text
+              background-clip: text
+        &:last-of-type
+          flex-direction: row-reverse
+          i
+            transform: rotate(180deg)
+          div
+            margin-right: 14px
+            margin-left: 0
+            span
+              align-self: flex-end
+
+
+@import media

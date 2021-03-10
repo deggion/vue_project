@@ -1,0 +1,90 @@
+@media only screen and (max-width: 1200px)
+  .furniture
+    padding: 0 50px
+
+@media only screen and (max-width: 1092px)
+  .furniture
+    &-content
+      &__elements
+        & > div
+          ul
+            li
+              width: calc( 50% - 22px )
+
+@media only screen and (max-width: 992px)
+  .furniture
+    &-nav
+      box-shadow: 0 8px 60px 20px rgb(0 0 0 / 5%)
+      border: none
+      padding: 30px
+      height: 100vh
+      position: fixed
+      top: 0
+      left: -324px
+      background: #fff
+      z-index: 2
+      transition: .45s
+      transition-delay: .2s
+      &.active
+        left: 0
+        transition-delay: 0s
+      .mobileButton
+        position: absolute
+        top: 40%
+        right: -40px
+        background: -webkit-linear-gradient(135deg, #ffb200 30%, #eae13c 100%)
+        background: linear-gradient(135deg, #ffb200 30%, #eae13c 100%)
+        box-shadow: 0 1px 6px rgb(0 0 0 / 12%)
+        width: 40px
+        height: 40px
+        display: flex
+        justify-content: center
+        align-items: center
+      & > ul
+        height: 100vh
+    &-content
+      margin-left: 0
+      &__elements
+        & > div
+          ul
+            li
+              width: calc( 33.333% - 22px )
+
+@media only screen and (max-width: 768px)
+  .furniture
+    &-content
+      &__elements
+        & > div
+          ul
+            li
+              width: calc( 50% - 22px )
+
+@media only screen and (max-width: 640px)
+  .furniture
+    padding: 0 12px
+    &-nav
+      .mobileButton
+        top: 50%
+    &-content
+      &__elements
+        & > div
+          ul
+            li
+              width: 100%
+              & > a
+                &:first-of-type
+                  img
+                    max-width: fit-content
+
+@media only screen and (max-width: 486px)
+  .furniture
+    &-content
+      &__sort
+        select
+          margin-bottom: 10px
+
+@media only screen and (max-width: 375px)
+  .furniture
+    &-nav
+      max-width: 280px
+      left: -280px
